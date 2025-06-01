@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>internal css</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .pink {
+            background-color: pink;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .gray {
+            background-color: gray;
+        }
+
+        .orange {
+            background-color: orange;
+        }
+
+        .purple {
+            background-color: rgb(61, 16, 159);
+        }
+
+        .crimson {
+            background-color: crimson
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .main_div {
+            height: 700px;
+            width: 1400px;
+        }
+
+        .headerfooter {
+            height: 100px;
+            width: 100%;
+        }
+
+        .body {
+            height: 500px;
+            width: 100%;
+        }
+
+        .rightleft {
+            height: 100%;
+            width: 25%;
+        }
+
+        .middlediv {
+            width: 50%;
+            height: 100%;
+        }
+
+        .childdiv {
+            height: 50%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_div">
+        <div class="headerfooter red flex">
+            <div class="rightleft blue"></div>
+            <div class="middlediv green"></div>
+            <div class="rightleft pink"></div>
+        </div>
+        <div class="body flex">
+            <div class="rightleft orange"></div>
+            <div class="middlediv orange">
+                <div class="childdiv purple"></div>
+                <div class="childdiv crimson"></div>
+            </div>
+            <div class="rightleft orange"></div>
+        </div>
+        <div class="headerfooter purple flex">
+            <div class="rightleft blue"></div>
+            <div class="middlediv green"></div>
+            <div class="rightleft pink"></div>
+        </div>
+    </div>
+</body>
+
+</html>
